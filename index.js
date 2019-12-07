@@ -1,7 +1,7 @@
 // Code your solution here
 function findMatching(arr,string){
     arr=arr.filter(function(f){
-        return f===string;
+        return f==string;
     })
     return arr;
 }
