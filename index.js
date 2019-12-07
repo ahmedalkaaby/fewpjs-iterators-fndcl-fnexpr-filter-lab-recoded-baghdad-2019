@@ -1,14 +1,14 @@
 // Code your solution here
 function findMatching(arr,string){
     arr=arr.filter(function(f){
-        return f==string;
+        return f.toLowerCase().indexOf(string.toLowerCase()) === 0
     })
     return arr;
 }
 
-function fuzzyMatch(arr,s){
-   arr= arr.filter(function(v){
-    return v.toLowerCase().indexOf(s.toLowerCase()) === 0;
+function fuzzyMatch(arr,string){
+   arr= arr.filter(function(f){
+    return f.toLowerCase().indexOf(string.toLowerCase()) === 0;
   })
   return arr;
 }
